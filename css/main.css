@@ -1,0 +1,319 @@
+:root {
+  --red: #b71234;
+  --brown: #584528;
+  --light-brown: #bd8a5e;
+  --green: #008542;
+  --min-width: 360px;
+}
+  
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  min-width: var(--min-width);
+  overflow-x: hidden;
+}
+
+.content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 10%;
+  /* left: 50%; */
+  /* -webkit-transform: translate(-50%, -50%); */
+  /* transform: translate(-50%, -50%); */
+  height: 600px;
+  width: 50%;
+}
+
+#logo {
+  width: 80%;
+}
+
+.title {
+  text-align: center;
+  font-family: 'CaliforniaGothic', sans-serif;
+  font-size: 5rem;
+  color: #584528;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.star {
+  color: var(--red);
+}
+
+.charity-ctr {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.charity-text {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.person {
+  position: absolute;
+  top: -300%;
+  height: 300%;
+  transition: all .2s ease;
+}
+
+#mark {
+  left: 0;
+}
+
+#andy {
+  right: 0;
+}
+
+.timer-ctr {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 0.7em;
+  letter-spacing: 5px;
+  border-radius: 5px;
+  align-items: stretch;
+}
+
+.timer-block {
+  flex: 1;
+  padding: 1rem 0;
+}
+
+
+.days-ctr {
+  background: var(--brown);
+}
+
+.hours-ctr {
+  background: var(--light-brown);
+
+}
+
+.minutes-ctr {
+  background: var(--red);
+
+}
+
+.seconds-ctr {
+  background: var(--green);
+}
+
+.numbers {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 5em;
+  transition: opacity 0.5s ease-in;
+}
+
+.timer-text {
+  font-size: 0.3rem;
+}
+
+#footer {
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: #b71234;
+}
+
+.food-logo {
+  width: 200px;
+}
+
+.perform-callout {
+  position: relative;
+  top: 50%;
+  color: white;
+}
+
+.signup-btn {
+  color: green;
+}
+
+@media (max-width: 479px) {
+  .title {
+    font-size: 3rem;
+  }
+  .person {
+    top: -200%;
+    height: 200%;
+  }
+  .numbers {
+    font-size: 1rem;
+  }
+  .timer-block {
+    padding: 8px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 600px) {
+  .content {
+    top: 50%;
+    height: 500px;
+    width: 70%;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  .person {
+    top: -150%;
+    height: 150%;
+  }
+  .timer-ctr {
+    font-size: 0.5rem;
+  }
+  .numbers {
+    font-size: 1.2rem;
+  }
+  .timer-block {
+    padding: 10px;
+    letter-spacing: 3px;
+  }
+}
+
+@media (min-height: 480px) and (max-height: 780px) {
+  .content {
+    top: 50%;
+    height: 350px;
+    min-width: 300px;
+  }
+  .person {
+    top: -130%;
+    height: 130%;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .numbers {
+    font-size: 1rem;
+  }
+  .timer-block {
+    padding: 5px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .person {
+    top: -200%;
+    height: 200%;
+  }
+  .numbers {
+    font-size: 1.58rem;
+  }
+  .timer-block {
+    padding: 8px;
+    letter-spacing: 3px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .content {
+    top: 45%;
+    height: 500px;
+  }
+  .person {
+    top: -250%;
+    height: 250%;
+  }
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .numbers {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  #mark {
+    top: -300%;
+    height: 300%;
+  }
+  .content {
+    top: 40%;
+    height: 600px;
+  }
+  .numbers {
+    font-size: 4rem;
+  }
+  .title {
+    font-size: 4rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .content {
+    width: 55%
+  }
+  .numbers {
+    font-size: 4rem;
+  }
+  .title {
+    font-size: 4.5rem;
+  }
+}
+
+@media (orientation: landscape) {
+  .person {
+    top: -300%;
+    height: 300%;
+  }
+}
+
+@media (min-height: 0px) and (max-height: 479px) {
+  .content {
+    height: 250px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  #logo {
+    width: 60%;
+  }
+  .timer-ctr {
+    font-size: 0.5rem;
+  }
+  .numbers {
+    font-size: 1.2rem;
+  }
+  .timer-block {
+    padding: 10px;
+    letter-spacing: 3px;
+  }
+}
+  
+  
