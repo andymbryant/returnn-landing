@@ -1,3 +1,7 @@
+function openLink(e) {
+  console.log(e)
+}
+
 const party = new Date("October 10, 2020 05:00:00").getTime();
 function getTime() {
   const today = new Date().getTime();
@@ -18,5 +22,11 @@ function getTime() {
   document.getElementById("seconds").textContent = seconds;
   setTimeout(getTime, 1000)
 }
+
+document.getElementById("charity-logo").addEventListener('click', function (e) {
+  e.preventDefault()
+  var win = window.open('https://www.lafoodbank.org/', '_blank');
+  win.focus();
+});
 
 getTime()

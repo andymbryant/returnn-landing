@@ -5,14 +5,33 @@
   --four: #7fb800;
   --five: #f7fff7;
   --min-width: 360px;
+  --blur: 2px;
 }
   
 html, body {
   width: 100%;
   height: 100%;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   min-width: var(--min-width);
   overflow-x: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  background-image: url('../../img/background-pattern.png');
+  background-repeat: repeat;
+  background-size: 175px 175px;
+  -webkit-filter: blur(var(--blur));
+  -moz-filter: blur(var(--blur));
+  -o-filter: blur(var(--blur));
+  -ms-filter: blur(var(--blur));
+  filter: blur(var(--blur));
+  opacity: 0.5
 }
 
 main {
@@ -25,6 +44,23 @@ main {
   height: 70%;
   top: 10%;
   width: 75%;
+  background-color: white;
+  box-shadow: 0 0 20px 20px white;
+  /* border-left: 1px solid var(--one);
+  border-right: 1px solid var(--one);
+  border-bottom: 1px solid var(--one); */
+  /* background-image : linear-gradient(to bottom, 
+                    rgba(255,255,255, 1), 
+                    rgba(255,255,255, 0) 90%);
+  background-image : linear-gradient(to left, 
+                    rgba(55,54,51, 0), 
+                    rgba(55,54,51, 1) 90%);
+  background-image : linear-gradient(to top, 
+                    rgba(55,54,51, 0), 
+                    rgba(55,54,51, 1) 90%);
+  background-image : linear-gradient(to right, 
+                    rgba(55,54,51, 0), 
+                    rgba(55,54,51, 1) 90%); */
 }
 
 .logo {
@@ -65,26 +101,23 @@ main {
   min-width: var(--min-width);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem;
 }
 
-.charity-logo-ctr {
-  width: 50%;
-  max-width: 200px;
-}
-
 .charity-text {
   font-size: 1.2rem;
+  font-weight: 200;
   font-style: italic;
   color: grey;
   width: 150px;
   text-align: right;
 }
 
-.charity-link, .charity-logo {
-  width: 100%;
+.charity-logo {
+  width: 140px;
+  cursor: pointer;
 }
 
 .person {
@@ -125,7 +158,6 @@ footer {
   color: white;
   text-align: center;
   text-transform: uppercase;
-  font-family: Helvetica, Arial, Sans-Serif;
   font-size: 0.7em;
   letter-spacing: 5px;
   border-radius: 5px;
@@ -155,7 +187,6 @@ footer {
 }
 
 .numbers {
-  font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 5em;
   transition: opacity 0.5s ease-in;
