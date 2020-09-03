@@ -118,6 +118,7 @@ footer {
 
 .timer-ctr {
   width: 50%;
+  min-width: 300px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -129,6 +130,7 @@ footer {
   letter-spacing: 5px;
   border-radius: 5px;
   align-items: stretch;
+  border: 1px solid black;
 }
 
 .timer-block {
