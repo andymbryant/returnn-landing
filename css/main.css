@@ -22,47 +22,65 @@ main {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  position: relative;
+  height: 70%;
   top: 10%;
-  height: 600px;
-  width: 70%;
+  width: 75%;
 }
 
-#logo {
+.logo {
   width: 80%;
+  margin: 3rem 0 1rem 0;
+  max-width: 650px;
 }
 
 .subtitle {
+  font-size: 1.5rem;
   font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.description {
+  width: 80%;
 }
 
 .date-time {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .star {
   color: var(--four);
 }
 
+.perform-btn {
+  color: white;
+  background-color: var(--one);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
 .charity-ctr {
-  height: 200px;
-  width: 50%;
+  width: 30%;
+  min-width: var(--min-width);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
 }
 
 .charity-logo-ctr {
-  width: 50%
+  width: 50%;
+  max-width: 200px;
 }
 
 .charity-text {
   font-size: 1.2rem;
   font-style: italic;
   color: grey;
-  text-align: center;
+  width: 150px;
+  text-align: right;
 }
 
 .charity-link, .charity-logo {
@@ -73,6 +91,7 @@ main {
   position: absolute;
   bottom: 0;
   width: 20%;
+  max-width: 300px;
   height: auto;
 }
 
@@ -87,6 +106,7 @@ main {
 footer {
   width: 100%;
   height: 20vw;
+  max-height: 250px;
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -141,19 +161,6 @@ footer {
 
 .timer-text {
   font-size: 0.3rem;
-}
-
-.perform-btn {
-  color: white;
-  background-color: var(--one);
-  font-weight: 700;
-  font-size: 1.3rem;
-  margin: 2rem 0;
-  padding: 1rem;
-}
-
-.signup-btn {
-  color: green;
 }
 
 @media (max-width: 479px) {
