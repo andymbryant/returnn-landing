@@ -4,7 +4,7 @@
   --three: #00a6ed;
   --four: #7fb800;
   --five: #f7fff7;
-  --min-width: 360px;
+  --min-width: 320px;
   --blur: 2px;
   --blur2: 1px;
 }
@@ -15,7 +15,6 @@ html, body {
   font-family: 'Roboto', sans-serif;
   min-width: var(--min-width);
   overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 .background-image {
@@ -48,6 +47,7 @@ main {
   width: 75%;
   background-color: white;
   box-shadow: 0 0 20px 20px white;
+  overflow-y: scroll;
 }
 
 .logo {
@@ -258,7 +258,13 @@ footer {
   }
 }
 
-@media (max-height: 670px) {
+@media (max-width: 450px) and (max-height: 600px) {
+  .mid-ctr {
+    width: 100%;
+  }
+}
+
+@media (max-height: 601px) {
   main {
     height: 550px;
   }
