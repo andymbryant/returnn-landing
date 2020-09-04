@@ -18,6 +18,7 @@ html, body {
   -ms-overflow-scrolling: touch;
   -moz-scrolling: touch;
   -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
 }
 
 .background-image {
