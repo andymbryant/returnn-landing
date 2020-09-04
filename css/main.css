@@ -51,7 +51,6 @@ main {
   width: 75%;
   background-color: white;
   box-shadow: 0 0 20px 20px white;
-  overflow-y: scroll;
 }
 
 .logo {
@@ -119,8 +118,7 @@ main {
 }
 
 .charity-ctr {
-  width: 30%;
-  min-width: var(--min-width);
+  width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -243,6 +241,9 @@ footer {
   .timer-text {
     font-size: 6px;
   }
+  .charity-ctr {
+    width: 250px;
+  }
 }
 
 @media (max-height: 600px) {
@@ -255,7 +256,7 @@ footer {
   .logo {
     width: 80%;
   }
-  .timer-block {
+  footer {
     display: none;
   }
 }
