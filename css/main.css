@@ -55,13 +55,13 @@ main {
 }
 
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-style: italic;
-  margin-bottom: 2rem;
 }
 
 .description {
   width: 80%;
+  margin-bottom: 1rem;
 }
 
 .mid-ctr {
@@ -74,12 +74,36 @@ main {
 }
 
 .datetime-ctr {
-  text-align: right;
+  text-align: left;
   font-size: 1.5rem;
+  padding-right: 1rem;
+  border-right: 1px solid grey;
+}
+
+.inner-datetime {
+  display: flex;
+  align-items: center;
 }
 
 .star {
-  color: var(--four);
+  font-size: 1rem;
+  margin-right: 0.2rem;
+}
+
+.color-one {
+  color: var(--one)
+}
+
+.color-two {
+  color: var(--two);
+}
+
+.color-three {
+  color: var(--three)
+}
+
+.color-four {
+  color: var(--four)
 }
 
 .perform-btn {
@@ -201,7 +225,7 @@ footer {
     letter-spacing: 2px;
   }
   .mid-ctr {
-    width: 100%;
+    width: 80%;
   }
   .datetime-ctr {
     font-size: 1rem;
