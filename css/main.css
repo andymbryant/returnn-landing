@@ -6,6 +6,7 @@
   --five: #f7fff7;
   --min-width: 360px;
   --blur: 2px;
+  --blur2: 1px;
 }
   
 html, body {
@@ -51,13 +52,15 @@ main {
 
 .logo {
   width: 100%;
-  margin: 3rem 0 1rem 0;
+  margin: 3rem 0 0rem 0;
   max-width: 650px;
 }
 
 .subtitle {
   font-size: 1.2rem;
   font-style: italic;
+  color: black;
+  font-weight: 200;
 }
 
 .description {
@@ -111,6 +114,7 @@ main {
   background-color: var(--one);
   font-weight: 700;
   padding: 1rem;
+  cursor: pointer;
 }
 
 .charity-ctr {
@@ -224,7 +228,7 @@ footer {
     letter-spacing: 2px;
   }
   .mid-ctr {
-    width: 60%;
+    width: 100%;
   }
   .datetime-ctr {
     font-size: 1rem;
@@ -237,12 +241,23 @@ footer {
   .timer-text {
     font-size: 6px;
   }
+  .charity-text {
+    font-size: 0.8rem;
+  }
   .charity-ctr {
-    width: 250px;
+    width: 100%;
+  }
+  .background-image {
+    background-size: 75px 75px;
+    -webkit-filter: blur(var(--blur2));
+    -moz-filter: blur(var(--blur2));
+    -o-filter: blur(var(--blur2));
+    -ms-filter: blur(var(--blur2));
+    filter: blur(var(--blur2));
   }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 500px) {
   main {
     height: 400px;
   }
@@ -253,19 +268,28 @@ footer {
     padding: 0.5rem 0.2rem;
   }
   .mid-ctr {
-    width: 70%;
+    width: 60%;
   }
   .charity-ctr {
-    width: 80%;
+    width: 70%;
   }
   .subtitle {
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
   .logo {
     width: 80%;
   }
   footer {
     display: none;
+  }
+  .background-image {
+    background-size: 75px 75px;
+    -webkit-filter: blur(var(--blur2));
+    -moz-filter: blur(var(--blur2));
+    -o-filter: blur(var(--blur2));
+    -ms-filter: blur(var(--blur2));
+    filter: blur(var(--blur2));
   }
 }
   
