@@ -29,4 +29,10 @@ document.getElementById("charity-logo").addEventListener('click', function (e) {
   win.focus();
 });
 
+document.getElementById("perform-btn").addEventListener('click', function (e) {
+  e.preventDefault()
+  var win = window.open('https://docs.google.com/forms/d/1-BDQdloeKyYJR-J1FTZVQJE-gyNjCZEOt0kIiOPAFOQ/viewform?edit_requested=true', '_blank');
+  win.focus();
+});
+
 getTime()
