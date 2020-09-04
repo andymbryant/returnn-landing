@@ -59,6 +59,7 @@ main {
 .subtitle {
   font-size: 1.2rem;
   font-style: italic;
+  margin-bottom: 1rem;
   color: black;
   font-weight: 200;
 }
@@ -257,9 +258,9 @@ footer {
   }
 }
 
-@media (max-height: 500px) {
+@media (max-height: 670px) {
   main {
-    height: 400px;
+    height: 550px;
   }
   .datetime-ctr {
     font-size: 1.1rem;
@@ -275,7 +276,6 @@ footer {
   }
   .subtitle {
     font-size: 1rem;
-    margin-bottom: 1rem;
   }
   .logo {
     width: 80%;
