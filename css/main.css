@@ -14,11 +14,7 @@ html, body {
   font-family: 'Roboto', sans-serif;
   min-width: var(--min-width);
   overflow-x: hidden;
-  /* -o-overflow-scrolling: touch;
-  -ms-overflow-scrolling: touch;
-  -moz-scrolling: touch;
-  -webkit-overflow-scrolling: touch; */
-
+  overflow-y: scroll;
 }
 
 .background-image {
@@ -228,7 +224,7 @@ footer {
     letter-spacing: 2px;
   }
   .mid-ctr {
-    width: 80%;
+    width: 60%;
   }
   .datetime-ctr {
     font-size: 1rem;
@@ -248,7 +244,19 @@ footer {
 
 @media (max-height: 600px) {
   main {
-    height: 600px;
+    height: 400px;
+  }
+  .datetime-ctr {
+    font-size: 1.1rem;
+  }
+  .perform-btn {
+    padding: 0.5rem 0.2rem;
+  }
+  .mid-ctr {
+    width: 70%;
+  }
+  .charity-ctr {
+    width: 80%;
   }
   .subtitle {
     font-size: 1rem;
