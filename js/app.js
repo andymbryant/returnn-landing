@@ -23,16 +23,19 @@ function getTime() {
   setTimeout(getTime, 1000)
 }
 
-document.getElementById("charity-logo").addEventListener('click', function (e) {
-  e.preventDefault()
+function goToCharity() {
   var win = window.open('https://www.lafoodbank.org/', '_blank');
   win.focus();
-});
+}
 
-document.getElementById("perform-btn").addEventListener('click', function (e) {
-  e.preventDefault()
-  var win = window.open('https://docs.google.com/forms/d/1-BDQdloeKyYJR-J1FTZVQJE-gyNjCZEOt0kIiOPAFOQ/viewform?edit_requested=true', '_blank');
+function goToLink(str) {
+  let win = ''
+  if (str === 'charity') {
+    win = window.open('https://www.lafoodbank.org/', '_blank');
+  } else if (str === 'survey') {
+    win = window.open('https://docs.google.com/forms/d/1-BDQdloeKyYJR-J1FTZVQJE-gyNjCZEOt0kIiOPAFOQ/viewform?edit_requested=true', '_blank');
+  }
   win.focus();
-});
+}
 
 getTime()
