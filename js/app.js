@@ -2,7 +2,7 @@ function openLink(e) {
   console.log(e)
 }
 
-const party = new Date("October 10, 2020 05:00:00").getTime();
+const party = new Date("October 24, 2020 06:00:00").getTime();
 function getTime() {
   const today = new Date().getTime();
 
