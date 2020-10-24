@@ -2,18 +2,18 @@ function openLink(e) {
   console.log(e)
 }
 
-const party = new Date("October 24, 2020 06:00:00").getTime();
+const party = new Date("October 24, 2020 21:00:00").getTime();
 function getTime() {
   const today = new Date().getTime();
 
   // get the difference
-  const diff = today - party;
+  const diff = party - today;
 
   // math
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+  let hours = Math.floor((diff % ((1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+  let minutes = Math.floor((diff % ((1000 * 60 * 60)) / (1000 * 60)));
+  let seconds = Math.floor((diff % ((1000 * 60)) / 1000));
 
   // display
   document.getElementById("days").textContent = days;
