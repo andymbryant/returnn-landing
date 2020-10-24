@@ -7,7 +7,7 @@ function getTime() {
   const today = new Date().getTime();
 
   // get the difference
-  const diff = party - today;
+  const diff = today - party;
 
   // math
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
